@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+  /* App.css or your main CSS file */
+
+
+/* Rest of your CSS */
+
+#navbar{
+  background-color: #0B0C10;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+  li.nav-item {
+    color: #686373;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+    /* text-decoration: none !important; */
+  }
+  /* .navbar-no-dots{
+    list-style: none;
+  } */
+  ul {
+    text-decoration: none;
+  }
+  
+
+  .Home{
+    text-align: center;
+    height: 700px;
+    /* background-color: #190061; */
+    background-color: #e1dbf5;
+  }
+  .About{
+    text-align: center;
+    height: 1000px;
+    background-color: #0B0C10;
+  }
+  .About h1{
+    color: #a8a3b7;
+  }
+  .About .lead{
+    color: #a8a3b7;
+  }
+ 
+  .About h2{
+    color: #e1dbf5;
+  }
+  .About .card.text-center{
+    background-color: #0B0C10;
+    color: #a8a3b7;
+    border: #0B0C10;
+  }
+  .Projects{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 880px;
+    background-color: #e1dbf5;
+  }
+  
+  .Experience{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 1230px;
+    background-color:#0B0C10;
+    color: #a8a3b7;
+  }
+  .Contact{
+    text-align: center;
+    height: 700px;
+    background-color: #e1dbf5;
+  }
+  .about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+.about_me h1{
+    font-size: 7rem;
+    /* color: white; */
+    color: #010409;
+}
+.about_me p{
+  color: #44414b;
+}
+.exp h1{
+  margin: 0;
+  background-color: #0B0C10;
+}
+#exp1{
+  margin: 0;
+  padding: 0;
+  /* background-color: #010409; */
+}
+#exp2{
+  /* background-color: #e1dbf5; */
+}
+#exp3{
+  /* background-color: #010409; */
+  /* color: #e1dbf5; */
+}
+#exp4{
+  /* background-color: #e1dbf5; */
+}
+#exp5{
+  /* background-color: #010409; */
+  /* color: #e1dbf5; */
+}
+#exp6{
+  /* background-color: #e1dbf5; */
+}
+.Experience h1{
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  /* background-color: #e1dbf5; */
+}
+.exp {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 10px; /* Add some space between the image and the link */
+}
+.myresume a{
+  text-decoration: underline;
+  color: #010409;
+}
+.myresume{
+  padding-top: 250px;
+  padding-bottom: 0px;
+  font-size: 400px;
+}
+.myresume h2{
+  font-size: 4rem;
+}
+.Contact a{
+  color: #0B0C10;
+  
+}
+.footer{
+  padding-top: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Styles for small devices (up to 767px) */
+@media (max-width: 767px) {
+ 
+  .About{
+    height: 900px;
   }
-  to {
-    transform: rotate(360deg);
+  .Project{
+    height: 1900px;
   }
+  .Experience{
+    height: 3000px;
+  }
+}
+
+/* Styles for medium devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .About{
+    height: 1200px;
+  }
+  .Project{
+    height: 3000px;
+  }
+  .Experience{
+    height: 3000px , !important;
+  }
+}
+
+/* Styles for large devices (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  
 }
