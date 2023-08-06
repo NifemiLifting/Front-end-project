@@ -1,7 +1,7 @@
 import React from 'react';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 // import { Link } from 'react-router-dom';
 import PIC from './images/lau.jpeg'
@@ -31,43 +31,61 @@ const Contact =useRef(null);
 
 const scrollToSection =(elementRef)=>{
     window.scrollTo({
-      top: elementRef.current.offsetTop,
+      top: elementRef.current.offsetTop - 60,
       behavior: 'smooth',
     })
 
 }
+const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
 
   return (
       <div className='App'>
-        <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor:'#0B0C10'}}>
-          <div className='container' id='navbar'>
-            <h3 className='navbar-brand'>Laughter Afolabi's Portfolio</h3>
-            <div className='' id=''>
-            <ul className='navbar ml-auto navabr-no-dots'>
-              
-              <button className='btn'>
-              <li onClick={()=> scrollToSection(Home)} className='nav-item'>Home</li>
-              </button>
-              <button className="btn">
-              <li onClick={()=> scrollToSection(About)} className='nav-item'>About </li>
-              </button>
-              <button className="btn">
-              <li onClick={()=> scrollToSection(Project)} className='nav-item'>Project</li>
-              </button>
-              <button className="btn">
-              <li onClick={()=> scrollToSection(Experience)} className='nav-item'>Experience</li>
-              </button>
-              <button className="btn">
-              <li onClick={()=> scrollToSection(Contact)} className='nav-item'>Contact</li>
-              </button>
-              </ul>
-            </div>
+        <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{ backgroundColor: '#0B0C10' }}>
+        <div className='container' id='navbar'>
+          <h3 className='navbar-brand'>Laughter Afolabi's Portfolio</h3>
+          <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className={`collapse navbar-collapse${isOpen ? ' show' : ''} justify-content-end`} id='navbar'>
+            <ul className='navbar-nav ml-auto navabr-no-dots'>
+              <li className='nav-item'>
+                <button className='btn' onClick={() => scrollToSection(Home)}>
+                  Home
+                </button>
+              </li>
+              <li className='nav-item'>
+                <button className='btn' onClick={() => scrollToSection(About)}>
+                  About
+                </button>
+              </li>
+              <li className='nav-item'>
+                <button className='btn' onClick={() => scrollToSection(Project)}>
+                  Project
+                </button>
+              </li>
+              <li className='nav-item'>
+                <button className='btn' onClick={() => scrollToSection(Experience)}>
+                  Experience
+                </button>
+              </li>
+              <li className='nav-item'>
+                <button className='btn' onClick={() => scrollToSection(Contact)}>
+                  Contact
+                </button>
+              </li>
+            </ul>
           </div>
+        </div>
+      </nav>
 
-        </nav>
+      
           <div ref={Home} className='Home'>
-            <br/><br/><br/><br/><br/>
+            
             <div className='about_me'>
               <h1>
               <TypingEffect words={['Hi, ', "I'm ", 'Laughter.']} />
@@ -81,12 +99,20 @@ const scrollToSection =(elementRef)=>{
          <div>
           <br/><br/>
          <h1 className="mb-4">A LITTLE BIT ABOUT ME</h1><br/>
-         <img src={PIC} alt='' className="mb-4 rounded-circle mx-auto d-block" style={{ height: '200px', width:'170px' }} />
-         <br/><br/>
-          <p className="lead">Laughter Afolabi is a Mechanical engineer with interests in product design, project management, and material engineering. With experience in design processes, software, and certifications, I've participated in startups, pitch competitions, engineering design competitions, and hackathons. Through internships, I collaborate with diverse teams ranging in renewable energy, manufacturing, and design industries.</p>
+         <div className='container'>
+            <div className='row'>
+                <div className='col-md-6'>
+                  <img src={PIC} alt='' className="mb-4 mx-auto d-block" style={{ height: '250px', width:'200px' }} />
+                </div>
+                <div className='col-md-6'>
+                  <p className="lead">Laughter Afolabi is a Mechanical engineer with interests in product design, project management, and material engineering. With experience in design processes, software, and certifications, I've participated in startups, pitch competitions, engineering design competitions, and hackathons. Through internships, I collaborate with diverse teams ranging in renewable energy, manufacturing, and design industries.</p>
+                </div>
+              </div>
+        </div>
+          
         
       </div>
-        <br/><br/><br/>
+        <br/><br/>
       
         <h2>Skills</h2>
         <div className="row mx-5">
@@ -128,7 +154,7 @@ const scrollToSection =(elementRef)=>{
             {/* <h3 classname='proj'></h3> */}
            <div className='project_one'>
             <br/>
-            <h2>Here are some projects i've worked on in the past.</h2>
+            <h2>Here are some projects I've worked on in the past.</h2>
            <div className="row mx-5">
              <div className="col-md-4 my-5">
                <div className="card text-center">
@@ -216,7 +242,7 @@ const scrollToSection =(elementRef)=>{
                 <div className='col-md-3 exp' id='exp2'>
                   
                   <img src={SMART} alt='smartice logo' width="150" height="150"/>
-                  <a className='link' href='https://smartice.org/'>smartice</a>
+                  <a className='link' href='https://smartice.org/'>Smartice</a>
                 </div>
                 <div className='col-md-9' id='exp2'>
                 <h3>Product and Design Engineer</h3>

@@ -1,31 +1,29 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  /* App.css or your main CSS file */
-
-
-/* Rest of your CSS */
 
 #navbar{
+  
   background-color: #0B0C10;
 }
-
-
+body{
+  font-family: 'Noto Serif Vithkuqi', serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  
+}
 
   li.nav-item {
+  
     color: #686373;
     list-style: none;
     margin-left: 20px;
     margin-top: 10px;
     
-    /* text-decoration: none !important; */
+   
   }
-  /* .navbar-no-dots{
-    list-style: none;
-  } */
+
   ul {
     text-decoration: none;
   }
@@ -34,12 +32,12 @@
   .Home{
     text-align: center;
     height: 700px;
-    /* background-color: #190061; */
+    
     background-color: #e1dbf5;
   }
   .About{
     text-align: center;
-    height: 1000px;
+    height: 900px;
     background-color: #0B0C10;
   }
   .About h1{
@@ -87,6 +85,7 @@
     text-align: center;
 }
 .about_me h1{
+  padding-top: 250px;
     font-size: 7rem;
     /* color: white; */
     color: #010409;
@@ -103,23 +102,7 @@
   padding: 0;
   /* background-color: #010409; */
 }
-#exp2{
-  /* background-color: #e1dbf5; */
-}
-#exp3{
-  /* background-color: #010409; */
-  /* color: #e1dbf5; */
-}
-#exp4{
-  /* background-color: #e1dbf5; */
-}
-#exp5{
-  /* background-color: #010409; */
-  /* color: #e1dbf5; */
-}
-#exp6{
-  /* background-color: #e1dbf5; */
-}
+
 .Experience h1{
   margin: 0;
   padding: 0;
@@ -139,11 +122,11 @@
   margin-top: 10px; /* Add some space between the image and the link */
 }
 .myresume a{
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #010409;
 }
 .myresume{
-  padding-top: 250px;
+  padding-top: 150px;
   padding-bottom: 0px;
   font-size: 400px;
 }
@@ -155,33 +138,38 @@
   
 }
 .footer{
-  padding-top: 70px;
+  padding-top: 20px;
 }
 
 /* Styles for small devices (up to 767px) */
 @media (max-width: 767px) {
- 
+ .about_me h1{
+  font-size: 3rem;
+ }
   .About{
-    height: 900px;
+    height: 1550px;
   }
-  .Project{
-    height: 1900px;
+  .Projects{
+    height: 2630px;
   }
   .Experience{
-    height: 3000px;
+    height: 2700px;
+  }
+  .myresume h2{
+    font-size: 3rem;
   }
 }
 
 /* Styles for medium devices (768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .About{
-    height: 1200px;
+    height: 1000px;
   }
-  .Project{
-    height: 3000px;
+  .Projects{
+    height: 1090px;
   }
   .Experience{
-    height: 3000px , !important;
+    height: 1400px;
   }
 }
 
