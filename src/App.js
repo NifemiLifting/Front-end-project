@@ -320,23 +320,19 @@ const [isOpen, setIsOpen] = useState(false);
             <br/><br/>
             <div class="container">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                 <a href='mailto:laughterwork@gmail.com'>
                 <i className="fa fa-envelope fa-4x"></i>
 
                 </a>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                 <a href='https://www.linkedin.com/in/laughter-afolabi/'>
                   <i className="fa fa-linkedin fa-4x"></i>
                 </a>
                 </div>
-                 <div class="col-md-4">
-                 <a href='tel:+7097301581'>
-                 <i className="fa fa-mobile fa-4x" ></i>
-                 </a>
-                 </div>
+                 
               </div>
             </div>
             </div>
