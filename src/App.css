@@ -13,7 +13,9 @@ body{
   /* font-family: 'Open Sans', sans-serif; */
   
 }
-
+button{
+  color: #686373;
+}
   li.nav-item {
   
     color: #686373;

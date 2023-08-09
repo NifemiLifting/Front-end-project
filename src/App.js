@@ -54,27 +54,27 @@ const [isOpen, setIsOpen] = useState(false);
           <div className={`collapse navbar-collapse${isOpen ? ' show' : ''} justify-content-end`} id='navbar'>
             <ul className='navbar-nav ml-auto navabr-no-dots'>
               <li className='nav-item'>
-                <button className='btn' onClick={() => scrollToSection(Home)}>
+                <button className='btn' style={{color:'#686373'}} onClick={() => scrollToSection(Home)}>
                   Home
                 </button>
               </li>
               <li className='nav-item'>
-                <button className='btn' onClick={() => scrollToSection(About)}>
+                <button className='btn' style={{color:'#686373'}} onClick={() => scrollToSection(About)}>
                   About
                 </button>
               </li>
               <li className='nav-item'>
-                <button className='btn' onClick={() => scrollToSection(Project)}>
+                <button className='btn' style={{color:'#686373'}} onClick={() => scrollToSection(Project)}>
                   Project
                 </button>
               </li>
               <li className='nav-item'>
-                <button className='btn' onClick={() => scrollToSection(Experience)}>
+                <button className='btn' style={{color:'#686373'}} onClick={() => scrollToSection(Experience)}>
                   Experience
                 </button>
               </li>
               <li className='nav-item'>
-                <button className='btn' onClick={() => scrollToSection(Contact)}>
+                <button className='btn' style={{color:'#686373'}} onClick={() => scrollToSection(Contact)}>
                   Contact
                 </button>
               </li>
