@@ -4,7 +4,7 @@ import './App.css'
 import { useRef, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 // import { Link } from 'react-router-dom';
-import PIC from './images/lau.jpeg'
+import PIC from './images/IMG.JPG'
 import SMUEC from './images/pone.png'
 import MEM from './images/wheel.png';
 import BLACK from './images/carjack.png';
@@ -98,11 +98,11 @@ const [isOpen, setIsOpen] = useState(false);
             <div className="container-fluid cardDetail text-center">
          <div>
           <br/><br/>
-         <h1 className="mb-4">A LITTLE BIT ABOUT ME</h1><br/>
+         <h1 className="mb-4">A little bit about me</h1><br/>
          <div className='container'>
             <div className='row'>
                 <div className='col-md-6'>
-                  <img src={PIC} alt='' className="mb-4 mx-auto d-block" style={{ height: '250px', width:'200px' }} />
+                  <img src={PIC} alt='' className="mb-4 mx-auto d-block" style={{ height: '250px', width:'250px' }} />
                 </div>
                 <div className='col-md-6'>
                   <p className="lead">Laughter Afolabi is a Mechanical engineer with interests in product design, project management, and material engineering. With experience in design processes, software, and certifications, I've participated in startups, pitch competitions, engineering design competitions, and hackathons. Through internships, I collaborate with diverse teams ranging in renewable energy, manufacturing, and design industries.</p>
